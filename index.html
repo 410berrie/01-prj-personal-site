@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Tell the browser this is HTML5 and the character encoding -->
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Page title that appears in the browser tab -->
+  <title>My Professional Portfolio</title>
+  
+  <!-- Link to our CSS stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- HEADER: Top section with navigation -->
+  <header>
+    <div class="container">
+      <h1>Emma Fortenberry</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION: Welcome banner -->
+  <section class="hero">
+    <div class="container">
+      <h2>Welcome to My Portfolio</h2>
+      <p>I'm a passionate developer creating amazing web experiences</p>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION: Tell people about yourself -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a web developer with a passion for creating clean, user-friendly websites. I love learning new technologies and solving complex problems.</p>
+      <p>When I'm not coding, you can find me learning new skills or contributing to open-source projects.</p>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION: Showcase your work -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>A description of your first project. Explain what you built and what technologies you used.</p>
+          <a href="#">View Project</a>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>A description of your second project. Share what problems it solves and what you learned.</p>
+          <a href="#">View Project</a>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card">
+          <h3>Project Three</h3>
+          <p>A description of your third project. Highlight key features and your role in building it.</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION: List your technical skills -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill-item">HTML</div>
+        <div class="skill-item">CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">Responsive Design</div>
+        <div class="skill-item">Git</div>
+        <div class="skill-item">Web Design</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION: How to reach you -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>I'd love to hear from you! Feel free to reach out.</p>
+      <p><strong>Email:</strong> your.email@example.com</p>
+      <p><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</p>
+      <p><strong>GitHub:</strong> github.com/yourprofile</p>
+    </div>
+  </section>
+
+  <!-- FOOTER: Bottom of the page -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 John Doe. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
