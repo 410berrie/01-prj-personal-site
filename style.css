@@ -136,7 +136,7 @@ section h2 {
 .project-card {
   background-color: rgba(30,30,30,0.85); /* Slightly translucent dark card */
   padding: 30px;
-  border-left: 5px solid #009edd; /* Accent using light blue */
+  border-left: 5px solid #ff942b; /* Accent using light blue */
   text-align: left;
   transition: transform 0.3s ease; /* Smooth animation */
   flex: 1 1 30%; /* Allow three cards per row when space permits */
