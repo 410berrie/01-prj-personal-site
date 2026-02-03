@@ -11,7 +11,8 @@ body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6; /* Spacing between lines for readability */
   color: #ffffff; /* White text */
-  background-color: #0a0a0a; /* Dark black background */
+  /* Black -> grey -> light blue gradient theme */
+  background: linear-gradient(to bottom, #000000 0%, #1a1a1a 35%, #2a2a2a 60%, #009edd 100%);
 }
 
 /* Container class to center content and set max width */
@@ -23,7 +24,7 @@ body {
 
 /* ===== HEADER & NAVIGATION ===== */
 header {
-  background-color: #1a1a1a; /* Dark black */
+  background-color: #000000; /* Keep header black */
   color: white;
   padding: 20px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Subtle shadow */
@@ -106,7 +107,7 @@ section h2 {
 
 /* About section styling */
 .about {
-  background-color: #1a1a1a; /* Dark black */
+  background: transparent; /* Let page gradient show through */
 }
 
 .about p {
@@ -118,7 +119,7 @@ section h2 {
 
 /* ===== PROJECTS SECTION ===== */
 .projects {
-  background-color: #0a0a0a; /* Dark black */
+  background: transparent; /* Let page gradient show through */
 }
 
 /* Container for project cards - display in a row */
@@ -133,9 +134,9 @@ section h2 {
 
 /* Style each project card */
 .project-card {
-  background-color: #2a2a2a; /* Dark grey */
+  background-color: rgba(30,30,30,0.85); /* Slightly translucent dark card */
   padding: 30px;
-  border-left: 5px solid #666666; /* Grey accent line */
+  border-left: 5px solid #009edd; /* Accent using light blue */
   text-align: left;
   transition: transform 0.3s ease; /* Smooth animation */
   flex: 1 1 30%; /* Allow three cards per row when space permits */
@@ -159,22 +160,23 @@ section h2 {
 }
 
 .project-card a {
-  background-color: #666666; /* Dark grey button */
+  background-color: #009edd; /* Light blue button */
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px; /* Rounded corners */
   display: inline-block;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease, transform 0.15s ease;
 }
 
 .project-card a:hover {
-  background-color: #888888; /* Lighter grey on hover */
+  background-color: #007fbf; /* Slightly darker blue on hover */
+  transform: translateY(-2px);
 }
 
 /* ===== SKILLS SECTION ===== */
 .skills {
-  background-color: #1a1a1a; /* Dark black background */
+  background: transparent; /* Let page gradient show through */
 }
 
 .skills-list {
@@ -184,18 +186,19 @@ section h2 {
 
 /* Style each skill item */
 .skill-item {
-  background-color: #333333; /* Dark grey background */
+  background-color: rgba(60,60,60,0.7); /* Muted grey pill */
   color: white;
   padding: 15px 25px;
   margin: 10px 10px; /* Space around items */
   display: inline-block; /* Put items in rows */
   border-radius: 25px; /* Pill-shaped buttons */
   font-weight: bold;
+  border: 1px solid rgba(255,255,255,0.04);
 }
 
 /* ===== CONTACT SECTION ===== */
 .contact {
-  background-color: #0a0a0a; /* Dark black */
+  background: transparent; /* Let page gradient show through */
   text-align: center;
 }
 
@@ -243,7 +246,7 @@ section h2 {
 
 /* ===== FOOTER ===== */
 footer {
-  background-color: #1a1a1a; /* Dark black */
+  background-color: #000000; /* Keep footer black for contrast */
   color: white;
   text-align: center;
   padding: 30px 0;
