@@ -123,18 +123,23 @@ section h2 {
 
 /* Container for project cards - display in a row */
 .project-list {
-  display: block; /* Use simple block layout for beginners */
-  text-align: center;
+  /* Use flexbox to place project cards side-by-side */
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap; /* Wrap on small screens */
 }
 
 /* Style each project card */
 .project-card {
   background-color: #2a2a2a; /* Dark grey */
   padding: 30px;
-  margin-bottom: 25px;
   border-left: 5px solid #666666; /* Grey accent line */
   text-align: left;
   transition: transform 0.3s ease; /* Smooth animation */
+  flex: 1 1 30%; /* Allow three cards per row when space permits */
+  min-width: 240px; /* Prevent cards from getting too small */
 }
 
 .project-card:hover {
@@ -208,8 +213,32 @@ section h2 {
 .icon-placeholder {
   width: 48px; /* Set width for SVG */
   height: 48px; /* Set height for SVG */
-  margin: 15px auto; /* Center and add space */
-  display: block; /* Make it a block element for centering */
+  margin: 15px auto; /* Default center and add space */
+  display: block; /* Default block behavior */
+}
+
+/* Contact row styles: place email and github side-by-side */
+.contact-row {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-align: left;
+  color: #d0d0d0;
+}
+
+/* When an icon is inside a contact item, keep it inline with text */
+.contact-item .icon-placeholder {
+  display: inline-block;
+  margin: 0;
 }
 
 /* ===== FOOTER ===== */
